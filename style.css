@@ -14,6 +14,7 @@ body {
 .product {
   border: 4px solid rgb(0, 0, 0);
   margin-top: 30px;
+  position: relative;
 }
 
 .product-title {
@@ -22,6 +23,20 @@ body {
   font-size: 22px;
   background-color: #f7f7f7;
   padding: 20px 0;
+}
+
+.product-title::after {
+  content: "sale";
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  font-size: 15px;
+  padding: 5px 15px;
+  display: inline-block;
+  letter-spacing: 2px;
 }
 
 .price {
@@ -51,7 +66,7 @@ body {
 .product-details {
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -76,3 +91,50 @@ body {
 .add-chart:hover {
   color: #000;
   background-color: #fff;
+}
+
+.button-black {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.button-blue {
+  display: inline-block;
+  background-color: rgb(0, 119, 255);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.button-red {
+  display: inline-block;
+  background-color: red;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.button-yellow {
+  display: inline-block;
+  background-color: yellow;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.button-green {
+  display: inline-block;
+  background-color: green;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.button-brown {
+  display: inline-block;
+  background-color: rgb(167, 16, 16);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.colors {
+  margin: 2px 0;
+}
