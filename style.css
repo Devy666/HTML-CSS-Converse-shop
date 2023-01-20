@@ -138,18 +138,9 @@ body {
 }
 
 .second-box {
-  flex: 1;
-  margin-top: 20px;
 }
 
 .third-box {
-  flex: 1;
-  margin-top: 20px;
-}
-
-.row {
-  display: flex;
-  gap: 40px;
 }
 
 .first-row {
@@ -158,5 +149,24 @@ body {
   align-items: center;
 }
 
-.shipping {
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  gap: 20px;
+  row-gap: 0;
+}
+
+.product-title {
+  grid-column: 1 / -1;
+}
+
+.add-chart {
+  grid-column: 1 / -1;
+}
+
+.product-title {
+  grid-column: 1 / -1;
 }
